@@ -1,0 +1,8 @@
+# Spire Smash style bible (measured from Stack Ball refs, then made richer: sky depth, lighting, bevels)
+Shape: smooth beveled ring segments (12 per ring, 1.5 deg gaps), white pole, round ball; no voxels, no outlines.
+Palette: sky top #FFB36B -> bottom #C2507A, from ~60% depth #6C4BC7 -> #2A1E5C; rings #FFE14D -> #FF8A3D -> #FF4F7B -> #8F6BFF by index;
+  black #221E2B (glossy, rim #FF2E7E); ball #2EC9FF (fire emissive #FF6A1A); pole #F4F1EC.
+Light: hemisphere 0.55 + one warm directional 1.15 from top-left-front, soft shadows (1024); fog in the sky-bottom colour 6–22 m.
+Camera: pitch -28 deg, FOV 50; tower 62–72 % of screen width; ball at 42–46 % height, 6–8 % of view height.
+Materials: MeshStandard, roughness 0.55 (rings) / 0.2 (black, ball); no flatShading.
+Exclusions: no foreign logos or names, no photo textures, no external assets, no Math.random in scene/sim.

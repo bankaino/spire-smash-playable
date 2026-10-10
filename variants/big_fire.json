@@ -1,0 +1,6 @@
+{
+  "hypothesis": "Fire lasts 3.6 s instead of 2.6: a bigger power fantasy, almost everybody wins. Tests whether power beats challenge for CTR.",
+  "K": {
+    "FIRE_T": 3.6
+  }
+}

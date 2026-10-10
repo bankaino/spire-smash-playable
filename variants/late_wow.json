@@ -1,0 +1,6 @@
+{
+  "hypothesis": "Fire needs 12 smashes in a row: no instant wow, the reward comes after a real challenge. Tests whether earned fire converts better than instant fire.",
+  "K": {
+    "FIRE_N": 12
+  }
+}

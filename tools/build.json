@@ -1,0 +1,14 @@
+{
+  "title": "Spire Smash",
+  "store": {
+    "android": "https://play.google.com/store/apps/details?id=com.example.spiresmash",
+    "ios": "https://apps.apple.com/app/id0000000000"
+  },
+  "images": {
+    "hand": [
+      272,
+      "alpha"
+    ]
+  },
+  "models": {}
+}
