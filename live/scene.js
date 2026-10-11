@@ -256,7 +256,7 @@
   S.probe = () => { const was = ball.visible; ball.visible = true; const b = KIT.screenBox(cam, ball, VW, VH), c = HUD.check(); ball.visible = was;
     return { calls: R.info.render.calls, tris: R.info.render.triangles, hero: b, heroH: b ? +((b[3] - b[1]) / VH * 100).toFixed(1) : 0,
       heroOn: !!b && b[0] >= 0 && b[2] <= VW && b[1] >= 0 && b[3] <= VH, hudOut: c.out, hudOverlap: c.ov }; };
-  // QA states: every beat of the ad, staged headless by driving the sim (bot or a scripted finger) — tools/probe and the critic use these
+  // QA states: every beat of the ad, staged headless by driving the sim (bot or a scripted finger) — tools/probe uses these
   S.QA = () => { const clone = (o) => JSON.parse(JSON.stringify(o)), bot = (D) => SIM.scriptInput(D.t, D);
     const run = (inp, until, extra = 0) => { const D = SIM.create(); while (D.t < 40 && !until(D)) SIM.step(D, inp(D)); const t1 = D.t + extra; while (D.t < t1) SIM.step(D, inp(D)); return clone(D); };
     const hold = (D) => ({ press: D.t > 0.3 ? 1 : 0 }), tap = (D) => ({ press: (D.t % 1) < 0.8 ? 1 : 0 });

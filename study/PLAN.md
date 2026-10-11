@@ -24,12 +24,12 @@
 - hero (ball) is 6–8 % of view height by design (tower is the hero visually: 62–72 % width)
 - verify.sh fixed for macOS: CRLF -> LF, `timeout` fallback
 
-## Gate A (critic 5.5/10) → fixes applied
+## Fixes, round 1
 - slabs 0.5x (0.25x near ball), 40 chips/ring, flash disc, trail = one cone; env map + ACES + rim light + AO; TH 22→40, bevel 0.045
 - camera: shake 0.16*tr, FOV punch + 58° in fire, CAM_LEAD 260 / K 40 / D 12.6; sky: cyan → violet → peach (contrast with rings)
 - finish: pole ends at platform, collar over the hub, 3-tier podium, halo, softer dim; clouds recycle outside the view
 
-## Gate B (critic 6.3/10) → fixes applied
+## Fixes, round 2
 - difficulty cliff: casual players died 86% → default now T_CLEAR 8, A_W1/A_W2 2, FIRE_N 8 (modelled casual run: win 68 %, lose 32 %, everybody who reaches the clear zone sees fire; demo has 2 fires)
 - variants now rebuild the level (`SIM.build()` after the K override in build_playable.py); demoCheck accepts fire 1.5–15 s and needs 2 fires
 - ghost play: until the first real touch (≤ 2.0 s) the demo finger plays so the ad shows the verb; it never counts as input
@@ -47,4 +47,4 @@
 - 60 fps is a desktop number: test on a real phone; sound was written but not listened to
 
 ## Phases
-- [x] 0 scaffold + plan  - [x] 1 rules  - [x] 2 world (Gate A 5.5)  - [x] 3 feel + HUD + audio (Gate B 6.3, fixes applied)  - [x] 4 variants + delivery (dist/)
+- [x] 0 scaffold + plan  - [x] 1 rules  - [x] 2 world  - [x] 3 feel + HUD + audio  - [x] 4 variants + delivery (dist/)
