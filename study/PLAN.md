@@ -22,7 +22,7 @@
 
 ## Decisions / notes
 - hero (ball) is 6–8 % of view height by design (tower is the hero visually: 62–72 % width)
-- verify.sh fixed for macOS in the skill itself: CRLF -> LF, `timeout` fallback
+- verify.sh fixed for macOS: CRLF -> LF, `timeout` fallback
 
 ## Gate A (critic 5.5/10) → fixes applied
 - slabs 0.5x (0.25x near ball), 40 chips/ring, flash disc, trail = one cone; env map + ACES + rim light + AO; TH 22→40, bevel 0.045
