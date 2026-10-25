@@ -106,7 +106,9 @@
     fin.add(drum, top, lip, collar, band); fin.position.y = Yw(SIM.ringTop(N)); scene.add(fin);
     // the ball
     ball = new T.Group(); ballMat = new T.MeshStandardMaterial({ color: COL.ball, roughness: 0.32, metalness: 0.05, emissive: 0x000000, envMap: envTex, envMapIntensity: 0.6 });
-    const bm = new T.Mesh(new T.SphereGeometry(1, 28, 20), ballMat); bm.scale.setScalar(BR); bm.castShadow = false;   // the contact blob is the ball's only shadow (a second, sun-offset one looked like a stray stain) ball.add(bm); scene.add(ball); ball.userData.mesh = bm;
+    // the contact blob is the ball's only shadow (a second, sun-offset one looked like a stray stain)
+    const bm = new T.Mesh(new T.SphereGeometry(1, 28, 20), ballMat); bm.scale.setScalar(BR); bm.castShadow = false;
+    ball.add(bm); scene.add(ball); ball.userData.mesh = bm;
     blob = new T.Mesh(new T.CircleGeometry(1, 24).rotateX(-Math.PI / 2), new T.MeshBasicMaterial({ color: 0x120a24, transparent: true, opacity: 0.4, depthWrite: false })); scene.add(blob);
     // per-frame instanced FX: ring pieces (plain and molten), chips, shock rings, flame, speed lines
     deb = new KIT.Pool(scene, segGeo, new T.MeshStandardMaterial({ roughness: 0.45, vertexColors: true }), 150, { shadow: false });
